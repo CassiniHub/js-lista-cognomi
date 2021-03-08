@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/placeholder.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Chiedere all'utente il suo cognome e
+        // inserirlo in un array non ordinato. 
+        // Riordinare l'array e stampare la lista
+        // dei cognomi in ordine alfabetico
+        // e la posizione "umana" (partendo da 1) del cognome dell'utente.
+
+        var lastName = ['Grillo', 'Fanelli', 'Lundini', 'Rapone', 'Rossi', 'Ambaglio'];
+        var userLastName = prompt('Inserisci il tuo cognome:');
+
+        lastName.push(userLastName);
+        lastName.sort();
+
+        var userPosition = lastName.indexOf(userLastName);
+
+        console.log(lastName, 'Cognome: ' + userLastName, '-', 'Posizione: ', userPosition + 1)
+    </script>
+</body>
+
+</html>
