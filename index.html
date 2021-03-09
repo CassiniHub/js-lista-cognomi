@@ -24,9 +24,12 @@
         var lastName = ['Grillo', 'Fanelli', 'Lundini', 'Rapone', 'Rossi', 'Ambaglio'];
         var userLastName = prompt('Inserisci il tuo cognome:');
 
+        //Rendo la prima lettera del nome dell'utente maiuscola
+        userLastName = userLastName[0].toUpperCase() + userLastName.slice(1);
+        
         lastName.push(userLastName);
         lastName.sort();
-
+        
         var userPosition = lastName.indexOf(userLastName);
 
         console.log(lastName, 'Cognome: ' + userLastName, '-', 'Posizione: ', userPosition + 1)
